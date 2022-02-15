@@ -1,0 +1,1 @@
+D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assignment_UWP.csproj;x86

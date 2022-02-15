@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="T2012E_Helloworld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T2012E_Helloworld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <DatePicker Margin="56,50,0,0" VerticalAlignment="Top" Height="33" Width="306" RenderTransformOrigin="0.558,-0.97"/>
+        <CheckBox Content="Football&#xD;&#xA;" Margin="56,88,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Male&#xD;&#xA;" Margin="56,125,0,0" VerticalAlignment="Top" Height="35" Width="109"/>
+        <TextBox x:ConnectionId='2' x:Name="txtUsername" Header="username" HorizontalAlignment="Left" Margin="56,201,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="279"/>
+        <RadioButton Content="Female&#xD;&#xA;&#xA;" Margin="170,125,0,0" VerticalAlignment="Top" Height="27" Width="109" RenderTransformOrigin="0.529,0.515" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <RadioButton.RenderTransform>
+                <CompositeTransform Rotation="-0.298" SkewY="0.237" TranslateX="-0.009" TranslateY="0.085"/>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <CheckBox Content="Swim\&#xA;" Margin="166,88,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
+
