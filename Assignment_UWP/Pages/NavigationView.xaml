@@ -17,7 +17,7 @@
                 <NavigationViewItem Tag="listSongAll" Content="All Songs" Icon="MusicInfo"/>
                 <NavigationViewItem Tag="listSongMine" Content="My Songs" Icon="MusicInfo"/>
                 <NavigationViewItemSeparator/>
-                <NavigationViewItem Tag="createSongAll" Content="Create Song All" Icon="Audio"/>
+                
                 <NavigationViewItem Tag="createtSongMine" Content="Create My Song" Icon="Audio"/>
                 <NavigationViewItemSeparator/>
                 <NavigationViewItem Tag="information" Content="Account Info" Icon="Account" />
@@ -27,7 +27,7 @@
             </NavigationView.MenuItems>
 
             <NavigationView.AutoSuggestBox>
-                <AutoSuggestBox x:Name="NavViewSearchBox" QueryIcon="FInd"/>
+                <AutoSuggestBox x:Name="NavViewSearchBox" QueryIcon="Find"/>
             </NavigationView.AutoSuggestBox>
             <ScrollViewer>
                 <Frame x:Name="MainContent" Padding="5" Margin="5"/>

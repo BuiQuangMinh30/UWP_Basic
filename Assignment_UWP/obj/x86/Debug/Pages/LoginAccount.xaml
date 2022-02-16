@@ -8,29 +8,103 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-        <RowDefinition Height="auto"/>
-        <RowDefinition Height="*"/>
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="auto"/>
-        <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
-    <StackPanel HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" >
-        <StackPanel Margin="0 100 0 0">
-            <TextBox x:ConnectionId='2' x:Name="txtEmail" Header="Email" Margin="0 0 0 10" Width="700" FontSize="20"/>
-            <TextBlock x:ConnectionId='3' x:Name="msgEmail" Margin="0 0 0 50" Visibility="Collapsed" Height="30" Text="Hãy nhập email" Foreground="Red" FontSize="16"/>
-            <PasswordBox x:ConnectionId='4' x:Name="txtPassword" Header="Password" Margin="0 0 0 10" Width="700" FontSize="20"/>
-            <TextBlock x:ConnectionId='5' x:Name="msgPassword" Margin="0 0 0 50" Visibility="Collapsed" Height="30" Text="Hãy nhập mật khẩu" Foreground="Red" FontSize="16"/>
-            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Button x:ConnectionId='6' Content="Đăng nhập"                      Margin="0 0 10 0"/>
-                    <Button x:ConnectionId='7' Content="Đăng ký"                        />
+    <RelativePanel>
+        <RelativePanel.Background>
+            <ImageBrush ImageSource="https://cdn.wallpapersafari.com/96/48/F1KCu6.jpg"/>
+        </RelativePanel.Background>
+
+        <ScrollViewer RelativePanel.AlignHorizontalCenterWithPanel="True"
+                      RelativePanel.AlignVerticalCenterWithPanel="True">
+
+            <StackPanel Background="Gray"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top">
+                <Grid>
+                    <Image Source="https://icon-library.com/images/icon-of-a-person/icon-of-a-person-3.jpg" Width="100"/>
+                </Grid>
+                <RelativePanel Margin="50,30,50,15">
+                    <Image x:ConnectionId='7' Source="https://toppng.com/uploads/preview/email-envelope-letter-send-inbox-newsletter-png-email-icon-transparent-background-11562853327aagu7825m3.png"
+                           Width="45"
+                           Margin="4"
+                           Name="ImgUserName"/>
+                    <TextBox x:ConnectionId='8' RelativePanel.RightOf="ImgUserName"
+                             
+                               FontSize="30"
+                               Width="300"
+                               BorderThickness="0"
+                                 PlaceholderText="Email" 
+                                x:Name="txtEmail"/>
+                    <TextBlock x:ConnectionId='9'
+                        RelativePanel.Below="txtEmail"
+                        Margin="60 0 0 0"
+                        x:Name="msgEmail" 
+                               Visibility="Collapsed"
+                               Height="24" Text="please enter email" TextWrapping="Wrap" Width="149" Foreground="Red"/>
+
+
+                </RelativePanel>
+                <RelativePanel Margin="50,30,50,15">
+                    <Image x:ConnectionId='4' Source="https://icons-for-free.com/iconfiles/png/512/open+password+icon-1320183290851596683.png"
+                           Width="45"
+                           Margin="4"
+                           Name="ImgPassword"/>
+                    <PasswordBox x:ConnectionId='5' RelativePanel.RightOf="ImgPassword"
+                               FontSize="30"
+                               Width="300"
+                               BorderThickness="0"
+                               x:Name="txtPassword"
+                                 PlaceholderText="Password" />
+                    <TextBlock x:ConnectionId='6'
+                        RelativePanel.Below="txtPassword"
+                        Margin="60 0 0 0"
+                        x:Name="msgPassword" 
+                               Visibility="Collapsed"
+                               Height="24" Text="please enter password"
+                        TextWrapping="Wrap" Width="149" Foreground="Red"/>
+
+
+                </RelativePanel>
+
+                <RelativePanel Margin="50,30,50,60" >
+                    <Button x:ConnectionId='2' Margin="50,0,0,0" Content="Login" Width="120"
+                            Foreground="Azure"
+                            FontSize="25"
+                            Background="Black"
+                            FontWeight="Bold"
+                                                 >
+                        <Button.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.ThemeDictionaries>
+                                    <ResourceDictionary x:Key="Light">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                                    </ResourceDictionary>
+                                </ResourceDictionary.ThemeDictionaries>
+                            </ResourceDictionary>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button x:ConnectionId='3' Margin="230,0,0,0" Content="Register" Width="120"
+                            Foreground="Black"
+                            FontSize="25"
+                            Background="LightGray"
+                            FontWeight="Bold"
+                                                   >
+                        <Button.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.ThemeDictionaries>
+                                    <ResourceDictionary x:Key="Light">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                                    </ResourceDictionary>
+                                </ResourceDictionary.ThemeDictionaries>
+                            </ResourceDictionary>
+                        </Button.Resources>
+                    </Button>
+
+                </RelativePanel>
             </StackPanel>
-            
-        </StackPanel>
-    </StackPanel>
-    </Grid>
+        </ScrollViewer>
+    </RelativePanel>
 </Page>
 

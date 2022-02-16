@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>93a3390b-b910-4ff3-9c98-41e39626d466</PackageIdentityName>
     <PackageIdentityPublisher>CN=minhb</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>958E478690689ADE19F9E3B2BE2011D610B024FD45C7C957B823B71FF8BE0E0B</RegisteredManifestChecksum>
+    <LayoutDir>D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>A47F2853FBFE3AD8FE022F391E675EA1C41A252C0EBC2912319BDB0908C08F6A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>93a3390b-b910-4ff3-9c98-41e39626d466_1.0.0.0_x86__zt2etc77fn9k4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>93a3390b-b910-4ff3-9c98-41e39626d466_zt2etc77fn9k4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>93a3390b-b910-4ff3-9c98-41e39626d466</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-15T04:30:05.963</Modified>
+      <Modified>2022-02-16T14:59:29.710</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Assignment_UWP.exe">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Assignment_UWP.exe">
       <PackagePath>entrypoint\Assignment_UWP.exe</PackagePath>
-      <Modified>2022-02-15T04:30:05.430</Modified>
+      <Modified>2022-02-16T14:59:29.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\anglesharp\0.16.1\lib\netstandard2.0\AngleSharp.dll">
       <PackagePath>AngleSharp.dll</PackagePath>
@@ -58,6 +58,10 @@
       <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
       <Modified>2018-11-12T17:28:58.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+      <Modified>2019-09-13T02:27:48.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2020-10-19T18:48:00.000</Modified>
@@ -73,6 +77,10 @@
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\microsoft.extensions.webencoders\5.0.3\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
       <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
       <Modified>2021-01-23T12:35:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\microsoft.odata.edm\7.10.0\lib\netstandard2.0\Microsoft.OData.Edm.dll">
+      <PackagePath>Microsoft.OData.Edm.dll</PackagePath>
+      <Modified>2022-01-27T16:53:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -94,107 +102,162 @@
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
       <Modified>2020-10-19T18:40:38.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\system.text.json\4.6.0\lib\netstandard2.0\System.Text.Json.dll">
+      <PackagePath>System.Text.Json.dll</PackagePath>
+      <Modified>2019-09-13T02:28:40.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-01T21:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-02-11T14:22:39.364</Modified>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Images\BackgroundLogin.scale-100.png">
+      <PackagePath>Assets\Images\BackgroundLogin.scale-100.png</PackagePath>
+      <Modified>2022-02-15T11:32:12.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Images\BackgroundLogin.scale-125.png">
+      <PackagePath>Assets\Images\BackgroundLogin.scale-125.png</PackagePath>
+      <Modified>2022-02-15T11:32:12.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Images\BackgroundLogin.scale-150.png">
+      <PackagePath>Assets\Images\BackgroundLogin.scale-150.png</PackagePath>
+      <Modified>2022-02-15T11:32:12.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Images\BackgroundLogin.scale-200.png">
+      <PackagePath>Assets\Images\BackgroundLogin.scale-200.png</PackagePath>
+      <Modified>2022-02-15T11:32:12.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Images\a.png">
+      <PackagePath>Assets\Images\a.png</PackagePath>
+      <Modified>2022-02-15T11:32:13.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Images\password.png">
+      <PackagePath>Assets\Images\password.png</PackagePath>
+      <Modified>2022-02-15T12:10:18.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <Modified>2022-02-15T10:53:03.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <Modified>2022-02-15T10:53:03.743</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <Modified>2022-02-15T10:53:03.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <Modified>2022-02-15T10:53:04.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\email.scale-100.png">
+      <PackagePath>email.scale-100.png</PackagePath>
+      <Modified>2022-02-15T12:09:49.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2022-01-08T16:34:22.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-08T16:34:22.622</Modified>
+      <Modified>2022-02-15T10:53:03.930</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T16:34:22.623</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T16:34:22.624</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T16:34:22.624</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T16:34:22.625</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T16:34:22.626</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Assignment_UWP.xr.xml">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Assets\SplashScreen.scale-400.jpg">
+      <PackagePath>Assets\SplashScreen.scale-400.jpg</PackagePath>
+      <Modified>2022-02-15T10:43:54.291</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2022-02-11T14:22:39.364</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Assignment_UWP.xr.xml">
       <PackagePath>Assignment_UWP.xr.xml</PackagePath>
-      <Modified>2022-02-15T04:30:05.289</Modified>
+      <Modified>2022-02-16T14:40:32.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.321</Modified>
+      <Modified>2022-02-16T14:59:29.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.321</Modified>
+      <Modified>2022-02-16T14:59:29.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\AccountInformation.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\AccountInformation.xbf">
       <PackagePath>Pages\AccountInformation.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.321</Modified>
+      <Modified>2022-02-16T14:59:29.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\CreateMySong.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\BlankPage1.xbf">
+      <PackagePath>Pages\BlankPage1.xbf</PackagePath>
+      <Modified>2022-02-16T14:59:29.063</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\CreateMySong.xbf">
       <PackagePath>Pages\CreateMySong.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.321</Modified>
+      <Modified>2022-02-16T14:59:29.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\CreateSongAll.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\CreateSongAll.xbf">
       <PackagePath>Pages\CreateSongAll.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.321</Modified>
+      <Modified>2022-02-16T14:59:29.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\ListSongAll.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\ListSongAll.xbf">
       <PackagePath>Pages\ListSongAll.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.322</Modified>
+      <Modified>2022-02-16T14:59:29.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\LoginAccount.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\LoginAccount.xbf">
       <PackagePath>Pages\LoginAccount.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.322</Modified>
+      <Modified>2022-02-16T14:59:29.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\LogoutAccount.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\LogoutAccount.xbf">
       <PackagePath>Pages\LogoutAccount.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.322</Modified>
+      <Modified>2022-02-16T14:59:29.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\MyListSong.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\MyListSong.xbf">
       <PackagePath>Pages\MyListSong.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.322</Modified>
+      <Modified>2022-02-16T14:59:29.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\NavigationView.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\NavigationView.xbf">
       <PackagePath>Pages\NavigationView.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.322</Modified>
+      <Modified>2022-02-16T14:59:29.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\RegisterAccount.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Pages\RegisterAccount.xbf">
       <PackagePath>Pages\RegisterAccount.xbf</PackagePath>
-      <Modified>2022-02-15T04:30:05.320</Modified>
+      <Modified>2022-02-16T14:59:29.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-01T19:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-15T04:19:11.697</Modified>
+      <Modified>2022-02-16T04:06:51.095</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Core\Assignment_UWP.exe">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\Assignment_UWP\bin\x86\Debug\Core\Assignment_UWP.exe">
       <PackagePath>Assignment_UWP.exe</PackagePath>
-      <Modified>2022-02-15T04:30:05.958</Modified>
+      <Modified>2022-02-16T14:59:29.706</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

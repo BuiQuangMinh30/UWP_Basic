@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -32,6 +33,14 @@ namespace Assignment_UWP.Pages
             this.InitializeComponent();
             
         }
+
+        public static bool IsEmail(string email)
+        {
+            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
+            return Regex.IsMatch(email, pattern);
+        }
+
+
         private void ValidateLogin(string email, string password)
         {
             if (string.IsNullOrEmpty(email)){
@@ -39,8 +48,16 @@ namespace Assignment_UWP.Pages
             }
             else
             {
-                msgEmail.Visibility = Visibility.Collapsed;
-                count++;
+                if (!IsEmail(email))
+                {
+                    msgEmail.Text = "This is not an email";
+                    msgEmail.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                }
+                else
+                {
+                    msgEmail.Text = "";
+                    count++;
+                }
             }
 
             if (string.IsNullOrEmpty(password))
@@ -53,7 +70,7 @@ namespace Assignment_UWP.Pages
                 count++;
             }
         }
-
+        
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -81,7 +98,7 @@ namespace Assignment_UWP.Pages
             else
             {
                 contentDialog.Title = "Login false!";
-                contentDialog.Content = "Đăng nhập thất bại!";
+                contentDialog.Content = "Login false!";
             }
             contentDialog.CloseButtonText = "Oke";
             await contentDialog.ShowAsync();

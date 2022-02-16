@@ -77,16 +77,21 @@ namespace Assignment_UWP
                     // parameter
                     //check token file , call api check valid 
                     //if(!valid) => login
+                    
                     Account account = await accountService.GetLoggedInAccount();
                     if (account == null)
                     {
                         rootFrame.Navigate(typeof(Pages.LoginAccount), e.Arguments);
+                        //rootFrame.Navigate(typeof(Pages.BlankPage1), e.Arguments);
                     }
                     else
                     {
                         currentLoggedIn = account;
                         rootFrame.Navigate(typeof(Pages.NavigationView), e.Arguments);
+                        //rootFrame.Navigate(typeof(Pages.BlankPage1), e.Arguments);
                     }
+                    
+                    //rootFrame.Navigate(typeof(Pages.BlankPage1), e.Arguments);
 
                 }
                 // Ensure the current window is active

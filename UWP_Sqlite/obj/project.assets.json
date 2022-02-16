@@ -9237,11 +9237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharp\\FPT\\T2012E_Helloworld\\UWP_Sqlite\\UWP_Sqlite.csproj",
+      "projectUniqueName": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\UWP_Sqlite\\UWP_Sqlite.csproj",
       "projectName": "UWP_Sqlite",
-      "projectPath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\UWP_Sqlite\\UWP_Sqlite.csproj",
+      "projectPath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\UWP_Sqlite\\UWP_Sqlite.csproj",
       "packagesPath": "C:\\Users\\minhb\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\UWP_Sqlite\\obj\\",
+      "outputPath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\UWP_Sqlite\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

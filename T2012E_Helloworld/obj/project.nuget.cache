@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ewOkamjBti6h5rNg9ON5fbEECHcEgj0duAnKCFasykVAIPFKc+12myrGxH2cQDJtd9yumB/291essB0knYYvSQ==",
+  "dgSpecHash": "pX/4foY/e67TJQ2GAszB0SVXlKcyfE64A1BfCNQpJoWu4WaaQibpCD0E++JgGE88SOrpWG9OwWVbCzRYSHV8OQ==",
   "success": true,
-  "projectFilePath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\T2012E_Helloworld\\T2012E_Helloworld.csproj",
+  "projectFilePath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\T2012E_Helloworld\\T2012E_Helloworld.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minhb\\.nuget\\packages\\cloudinarydotnet\\1.17.0\\cloudinarydotnet.1.17.0.nupkg.sha512",
     "C:\\Users\\minhb\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

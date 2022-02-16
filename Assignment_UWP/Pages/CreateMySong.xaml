@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://cdn.wallpapersafari.com/96/48/F1KCu6.jpg"/>
+        </Grid.Background>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
@@ -18,31 +22,45 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" >
-            <StackPanel Margin="0 30 0 0">
-                <TextBox x:Name="txtName" Header="Name" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                <TextBlock x:Name="lblCheckName" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy nhập tên bài hát" Foreground="Red" FontSize="16"/>
-                <TextBlock Text="Description" FontSize="20" Margin="0 0 0 5"/>
-                <TextBox x:Name="txtDescription" Margin="0 0 0 10" TextWrapping="Wrap" Width="700" FontSize="20"/>
-                <TextBlock x:Name="lblCheckDescription" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy nhập mô tả" Foreground="Red" FontSize="16"/>
-                <TextBox x:Name="txtSinger" Header="Singer" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                <TextBlock x:Name="lblCheckSinger" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy nhập người hát" Foreground="Red" FontSize="16"/>
-                <TextBox x:Name="txtAuthor" Header="Author" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                <TextBlock x:Name="lblCheckAuthor" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy nhập tác giả" Foreground="Red" FontSize="16"/>
+        <StackPanel HorizontalAlignment="Center" Margin="50" Grid.Row="1" Grid.Column="1" >
+            <StackPanel Margin="10 30 10 0">
+                <StackPanel Width="1000" >
+                    <TextBox x:Name="txtName" HorizontalAlignment="Left"  Header="Name" Margin="0 0 0 10" Width="480"  FontSize="20"/>
+                    <TextBlock x:Name="lblCheckName" Margin="0 0 0 20"
+                               Visibility="Collapsed" Height="30" Text="please enter name music" Foreground="Red" FontSize="16"/>
+
+                    <TextBox x:Name="txtDescription" HorizontalAlignment="Right" Header="Description"  Width="480"
+                             Margin="0 -80 0 10" TextWrapping="Wrap"  FontSize="20"/>
+                    <TextBlock x:Name="lblCheckDescription" Margin="0 0 0 20" Visibility="Collapsed" 
+                               Height="30" Text="please enter desc" Foreground="Red" FontSize="16"/>
+
+                </StackPanel>
+                
+                <StackPanel  Width="1000" >
+                    
+                    <TextBox x:Name="txtSinger" HorizontalAlignment="Left" 
+                             Header="Singer" Margin="0 0 0 10" Width="480" FontSize="20"/>
+                    <TextBlock x:Name="lblCheckSinger" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy nhập người hát" Foreground="Red" FontSize="16"/>
+
+                    <TextBox x:Name="txtAuthor" Header="Author" HorizontalAlignment="Right"
+                             Margin="0 -80 0 10" Width="480" FontSize="20"/>
+                    <TextBlock x:Name="lblCheckAuthor" Margin="0 0 0 20" Visibility="Collapsed" 
+                               Height="30" Text="please enter author" Foreground="Red" FontSize="16"/>
+
+                </StackPanel>
                 <TextBox x:Name="txtThumbnail" Visibility="Collapsed" Header="Thumbnail"  Margin="0 0 0 10" Width="700" FontSize="20"/>
                 <Border Height="200" Width="200" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1" Margin="0 0 0 5">
                     <Image x:Name="imgThumbnail" />
                 </Border>
-                <Button x:Name="btnCreateThumbnail"  Content="Tạo ảnh" Margin="0 0 0 10" Click="Button_CreateThumbnail"/>
+                <Button x:Name="btnCreateThumbnail"  Content="Image" Margin="0 0 0 10" Click="Button_CreateThumbnail"/>
                 
-                <TextBlock x:Name="lblCheckThumbnail" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy chọn ảnh" Foreground="Red" FontSize="16"/>
-                <TextBox x:Name="txtLink" Header="Link" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                <TextBlock x:Name="lblCheckLink" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="Hãy chọn bài hát" Foreground="Red" FontSize="16"/>
+                <TextBlock x:Name="lblCheckThumbnail" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="please choose image" Foreground="Red" FontSize="16"/>
+                <TextBox x:Name="txtLink" Header="Link" Margin="0 0 0 10" Width="1000" FontSize="20"/>
+                <TextBlock x:Name="lblCheckLink" Margin="0 0 0 20" Visibility="Collapsed" Height="30" Text="plase choose music" Foreground="Red" FontSize="16"/>
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Button Content="Tạo bài hát" Margin="0 0 10 0" Click="Button_CreateSong"/>
+                    <Button Content="Create Music" Margin="0 0 10 0" Click="Button_CreateSong"/>
                 </StackPanel>
-                <TextBlock x:Name="waitingRespone" Margin="0 10 0 0" Visibility="Collapsed" HorizontalAlignment="Center" Height="30" Text="Xin hãy chờ để tạo bài hát..." Foreground="Red" FontSize="16"/>
-            </StackPanel>
+               </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

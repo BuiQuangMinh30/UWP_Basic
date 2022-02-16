@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jwkYrvu4P6oqMENxphlkTxR0xilxJnV07WzxzvsWWYsnr4wVRPCNoI1hcx4JdKiay4txy+OUHpF18r28YvYT9w==",
+  "dgSpecHash": "BQ61uOuJ2NwTtEnBZK6aY/yTNSq5Z9RhXKJbsbHLxT9eTUeyiHo7Vmtl88m9yKhgYT4FThq4DIoi0c8w8jJj+g==",
   "success": true,
-  "projectFilePath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\UWP_Sqlite\\UWP_Sqlite.csproj",
+  "projectFilePath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\UWP_Sqlite\\UWP_Sqlite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minhb\\.nuget\\packages\\grpc.core\\2.43.0\\grpc.core.2.43.0.nupkg.sha512",
     "C:\\Users\\minhb\\.nuget\\packages\\grpc.core.api\\2.43.0\\grpc.core.api.2.43.0.nupkg.sha512",

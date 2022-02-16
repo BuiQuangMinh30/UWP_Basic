@@ -116,7 +116,7 @@ namespace Assignment_UWP.Pages
             {
                 return;
             }
-            waitingRespone.Visibility = Visibility.Visible;
+            //waitingRespone.Visibility = Visibility.Visible;
             var songCreate = new Song()
             {
                 name = txtName.Text,
@@ -130,11 +130,12 @@ namespace Assignment_UWP.Pages
             bool result = await SongService.IsCreateSongMineAsync(songCreate);
 
             ContentDialog contentDialog = new ContentDialog();
-            waitingRespone.Visibility = Visibility.Collapsed;
+            //waitingRespone.Visibility = Visibility.Collapsed;
             if (result)
             {
                 contentDialog.Title = "Up music success";
                 contentDialog.Content = "Create Song Success";
+                Frame.Navigate(typeof(Pages.MyListSong));
             }
             else
             {

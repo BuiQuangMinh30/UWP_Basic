@@ -140,6 +140,7 @@ namespace T2012E_Helloworld.Service
             }
             catch (Exception ex)
             {
+                Debug.WriteLine("Loi loadtoken", ex);
                 return null;
             }
         }

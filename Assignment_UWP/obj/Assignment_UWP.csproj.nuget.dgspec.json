@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CSharp\\FPT\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj": {}
+    "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj": {}
   },
   "projects": {
-    "D:\\CSharp\\FPT\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj": {
+    "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSharp\\FPT\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj",
+        "projectUniqueName": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj",
         "projectName": "Assignment_UWP",
-        "projectPath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj",
+        "projectPath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\Assignment_UWP\\Assignment_UWP.csproj",
         "packagesPath": "C:\\Users\\minhb\\.nuget\\packages\\",
-        "outputPath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\Assignment_UWP\\obj\\",
+        "outputPath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\Assignment_UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -50,6 +50,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"
+            },
+            "Microsoft.OData.Edm": {
+              "target": "Package",
+              "version": "[7.10.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

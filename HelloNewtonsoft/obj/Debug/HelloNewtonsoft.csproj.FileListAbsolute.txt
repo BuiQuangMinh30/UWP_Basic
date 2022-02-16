@@ -12,3 +12,17 @@ D:\CSharp\FPT\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\SQLitePCL.Ext.dll
 D:\CSharp\FPT\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\SQLitePCL.dll
 D:\CSharp\FPT\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\x86\sqlite3.dll
 D:\CSharp\FPT\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\x64\sqlite3.dll
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\x86\sqlite3.dll
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\x64\sqlite3.dll
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\SQLitePCL.Ext.dll
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\HelloNewtonsoft.exe.config
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\HelloNewtonsoft.exe
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\HelloNewtonsoft.pdb
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\Newtonsoft.Json.dll
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\SQLitePCL.dll
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\Newtonsoft.Json.xml
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.csproj.AssemblyReference.cache
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.csproj.CoreCompileInputs.cache
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.csproj.CopyComplete
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.exe
+D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.pdb

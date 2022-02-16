@@ -1,6 +1,17 @@
 WinMetadata\Windows.winmd
+Assets\Images\a.png
+Assets\Images\BackgroundLogin.scale-100.png
+Assets\Images\BackgroundLogin.scale-125.png
+Assets\Images\BackgroundLogin.scale-150.png
+Assets\Images\BackgroundLogin.scale-200.png
+Assets\Images\password.png
 Assets\LockScreenLogo.scale-200.png
+Assets\SplashScreen.scale-100.png
+Assets\SplashScreen.scale-125.png
+Assets\SplashScreen.scale-150.png
 Assets\SplashScreen.scale-200.png
+Assets\SplashScreen.scale-400.jpg
+Assets\SplashScreen.scale-400.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
 Assets\Square44x44Logo.targetsize-24_altform-unplated.png
@@ -10,6 +21,7 @@ App.xbf
 Assignment_UWP.xr.xml
 MainPage.xbf
 Pages\AccountInformation.xbf
+Pages\BlankPage1.xbf
 Pages\CreateMySong.xbf
 Pages\CreateSongAll.xbf
 Pages\ListSongAll.xbf
@@ -18,4 +30,5 @@ Pages\LogoutAccount.xbf
 Pages\MyListSong.xbf
 Pages\NavigationView.xbf
 Pages\RegisterAccount.xbf
+email.scale-100.png
 Properties\Default.rd.xml

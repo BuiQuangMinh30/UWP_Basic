@@ -33,17 +33,37 @@ namespace Assignment_UWP.Pages
         private void AccountInformation_Loaded(object sender, RoutedEventArgs e)
         {
             Account account = App.currentLoggedIn;
-            txtFirstName.Text = account.firstName;
+            txtFirstName.Text = account.firstName.ToString() ?? "Minh";
             txtLastName.Text = account.lastName.ToString();
             txtEmail.Text = account.email.ToString();
             txtAddress.Text = account.address.ToString();
             txtPhone.Text = account.phone.ToString();
-            //BitmapImage bitmapImageAvatar = new BitmapImage(new Uri(account.avatar.ToString()));
-            //txtAvatar.Source = bitmapImageAvatar;
-            txtGender.Text = account.gender.ToString();
+            BitmapImage bitmapImageAvatar = new BitmapImage(new Uri(account.avatar.ToString()));
+            txtAvatar.Source = bitmapImageAvatar;
+            int genderText = Convert.ToInt32(account.gender.ToString());
+            if(genderText == 1)
+            {
+                txtGender.Text = "Nam";
+
+            }else if (genderText == 2)
+            {
+                txtGender.Text = "Nữ";
+            }
+            else
+            {
+                txtGender.Text = "Khác";
+            }
             txtBirthday.Text = account.birthday.ToString();
-            txtStatus.Text = account.status.ToString();
-            txtIntroduction.Text = account.intro ?? "dang cap nhat";
+            int statusSuggest = Convert.ToInt32(account.status.ToString());
+            if (statusSuggest == 1)
+            {
+                txtStatus.Text = "Online";
+            }
+            else
+            {
+                txtStatus.Text = "Offline";
+            }
+            txtIntroduction.Text = account.intro ?? "test";
         }
     }
 }

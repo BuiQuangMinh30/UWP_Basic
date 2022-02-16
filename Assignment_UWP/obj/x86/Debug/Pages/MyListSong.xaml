@@ -9,37 +9,114 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.Resources>
-        <DataTemplate x:Key="SongTemplate"                        >
-            <Grid x:ConnectionId='3' Margin="0,12,0,12"                                          >
+    <!--<Page.Resources>
+        <DataTemplate x:Key="SongTemplate" x:DataType="empty:Song">
+            <Grid Margin="0,12,0,12" AutomationProperties.Name="{x:Bind name}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image x:ConnectionId='4'                             MaxHeight="100" Stretch="Fill"/>
+                <Image Source="{x:Bind thumbnail}" MaxHeight="100" MaxWidth="160" Stretch="Fill"/>
 
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
-                    <TextBlock x:ConnectionId='5'                      FontSize="14" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
+                    <TextBlock Text="{x:Bind name}" FontSize="14" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
                         HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
-                    <TextBlock x:ConnectionId='6'                             FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
+                    <TextBlock Text="{x:Bind description}" FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                         TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Author: " HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="0,0,0,0"/>
+                        <TextBlock Text="{x:Bind author}" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                        <TextBlock Text=" ⋅ " FontFamily="Segoe UI" FontSize="12" FontWeight="Bold"
+                            HorizontalAlignment="Left"/>
+                        <TextBlock Text="Singer: " HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                        <TextBlock Text="{x:Bind singer}" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                    </StackPanel>
                 </StackPanel>
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    <ScrollViewer>
+    <Grid>
 
         <StackPanel>
             <TextBlock Text="List Song"/>
-            <ListView x:ConnectionId='7' x:Name="ListMySong" ItemTemplate="{StaticResource SongTemplate}"
+            <ListView x:Name="ListMySong" ItemTemplate="{StaticResource SongTemplate}"
                       SelectionMode="Single"
-                                                                    
-         Height="400"
+                      SelectionChanged="MyListSong_SelectionChanged"
+         Height="550"
          MinWidth="550"
          BorderThickness="1"
          BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"/>
-            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AutoPlay="False" AreTransportControlsEnabled="True"/>
+            <MediaPlayerElement x:Name="MyMediaPlayer" AutoPlay="False" AreTransportControlsEnabled="True">
+                <MediaPlayerElement.TransportControls>
+                    <MediaTransportControls
+                    IsFullWindowButtonVisible="True"
+                    IsNextTrackButtonVisible="True"
+                    IsPreviousTrackButtonVisible="True"
+                    IsZoomButtonVisible="True" />
+                </MediaPlayerElement.TransportControls>
+            </MediaPlayerElement>
         </StackPanel>
-    </ScrollViewer>
+    </Grid>-->
+
+    <!-- The GridView used for this sample is shown below, with all of the necessary added properties. -->
+
+    <Page.Resources>
+        <DataTemplate x:ConnectionId='2' x:Name="SongTemplate"                        >
+            <Grid x:ConnectionId='3' Width="225" Height="180">
+                <Image x:ConnectionId='4'                             Stretch="UniformToFill"/>
+                <StackPanel Orientation="Vertical" Height="100" VerticalAlignment="Bottom" Padding="5,1,5,1"
+                    Background="LightGray" Opacity=".50">
+                    <TextBlock x:ConnectionId='5' FontSize="22" Foreground="Black"                     />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Black" FontSize="18" Text="Singer: " Style="{ThemeResource CaptionTextBlockStyle}"
+                           />
+                        <TextBlock x:ConnectionId='6' Foreground="Black" FontSize="18"                        Style="{ThemeResource CaptionTextBlockStyle}"
+                           />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="List My Song"/>
+            <GridView x:ConnectionId='7' x:Name="ListMySong" ItemTemplate="{StaticResource SongTemplate}"
+                      SelectionMode="Single"
+                                                                    
+                      IsItemClickEnabled="False"
+                      CanDragItems="False"
+                      AllowDrop="False"
+                      CanReorderItems="False"
+                      FlowDirection="LeftToRight"
+                      Height="550"
+         MinWidth="550"
+         BorderThickness="1"
+         BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
+                <GridView.ItemContainerStyle>
+                    <Style TargetType="GridViewItem">
+                        <Setter Property="Margin" Value="5, 5, 5, 5"/>
+                    </Style>
+                </GridView.ItemContainerStyle>
+
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ItemsWrapGrid x:Name="MaxItemsWrapGrid"
+                           MaximumRowsOrColumns="5"
+                           Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+
+            </GridView>
+            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AutoPlay="False" AreTransportControlsEnabled="True">
+                <MediaPlayerElement.TransportControls>
+                    <MediaTransportControls
+                    IsFullWindowButtonVisible="True"
+                    IsNextTrackButtonVisible="True"
+                    IsPreviousTrackButtonVisible="True"
+                    IsZoomButtonVisible="True" />
+                </MediaPlayerElement.TransportControls>
+            </MediaPlayerElement>
+        </StackPanel>
+    </Grid>
 </Page>
 

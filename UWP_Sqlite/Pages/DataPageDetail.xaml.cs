@@ -43,7 +43,6 @@ namespace UWP_Sqlite.Pages
                 btnCreatedDate.Text = personalDetail.CreatedDate.ToString("dd-MM-yyyy");
                 btnCategory.Text = personalDetail.Category.ToString();
             }
-
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

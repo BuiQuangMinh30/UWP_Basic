@@ -23,6 +23,8 @@ using CloudinaryDotNet.Actions;
 using CloudinaryDotNet;
 using System.Diagnostics;
 using AngleSharp.Dom;
+using Microsoft.OData.Edm;
+using System.ComponentModel.DataAnnotations;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -37,6 +39,7 @@ namespace Assignment_UWP.Pages
         private CloudinaryDotNet.Account accountCloudinary;
         private Cloudinary cloudinary;
         private int subCheckGender;
+        private int checkGenderInt;
         private string dateChanged;
         private int countValid = 0;
 
@@ -46,8 +49,14 @@ namespace Assignment_UWP.Pages
         {
             this.InitializeComponent();
             this.Loaded += RegisterPage_Loaded;
-        
+
         }
+        public static bool IsEmail(string email)
+        {
+            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
+            return Regex.IsMatch(email, pattern);
+        }
+
         private void RegisterPage_Loaded(object sender, RoutedEventArgs e)
         {
             accountCloudinary = new CloudinaryDotNet.Account(
@@ -82,124 +91,129 @@ namespace Assignment_UWP.Pages
         {
             var date = sender;
             dateChanged = date.Date.Value.ToString("yyyy-MM-dd");
+            
         }
         private void checkValidate(string FirstName, string LastName, string Email, string Password, string Phone, string Address, int CheckGenderInt, string Avatar, string dateChanged, string Introduction)
         {
             countValid = 0;
             if (string.IsNullOrEmpty(FirstName))
             {
-                lblCheckFirstName.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckFirstName.Text = "please enter first name";
             }
             else
             {
-                lblCheckFirstName.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                lblCheckFirstName.Text = "";
                 countValid++;
             }
             if (string.IsNullOrEmpty(LastName))
             {
-                lblCheckLastName.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckLastName.Text = "please enter last name";
             }
             else
             {
-                lblCheckLastName.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                lblCheckLastName.Text = "";
                 countValid++;
             }
             if (string.IsNullOrEmpty(Email))
             {
-                lblCheckEmail.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckEmail.Text = "please enter email";
             }
             else
             {
                 if (!IsEmail(Email))
                 {
-                    lblCheckEmail.Text = "Đây không phải là email";
-                    lblCheckEmail.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                    lblCheckEmail.Text = "This is not an email";
+                    //lblCheckEmail.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 }
                 else
                 {
-                    lblCheckEmail.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                    lblCheckEmail.Text = "";
                     countValid++;
                 }
             }
             if (string.IsNullOrEmpty(Password))
             {
-                lblCheckPassword.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckPassword.Text = "please enter password";
             }
             else
             {
-                lblCheckPassword.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                lblCheckPassword.Text = "";
                 countValid++;
             }
             if (string.IsNullOrEmpty(Phone))
             {
-                lblCheckPhone.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckPhone.Text = "please enter phone";
             }
             else
             {
                 if (!IsPhoneNumber(Phone))
                 {
-                    lblCheckPhone.Text = "Đây không phải là số điện thoại";
-                    lblCheckPhone.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                    lblCheckPhone.Text = "This is not a phone number";
+                    //lblCheckPhone.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 }
                 else
                 {
-                    lblCheckPhone.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                    lblCheckPhone.Text = "";
                     countValid++;
                 }
             }
             if (string.IsNullOrEmpty(Avatar))
             {
-                lblCheckAvatar.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckAvatar.Text = "please enter avatar";
             }
             else
             {
-                lblCheckAvatar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                lblCheckAvatar.Text = "";
                 countValid++;
             }
-            if (CheckGenderInt == 0 || CheckGenderInt == null)
+            if (CheckGenderInt == 0 || subCheckGender == null)
             {
-                checkGender.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                checkGender.Text = "please choose gender"; 
             }
             else
             {
-                checkGender.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                checkGender.Text = "";
                 countValid++;
             }
             if (string.IsNullOrEmpty(Address))
             {
-                lblCheckAddress.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckAddress.Text = "please enter address"; 
             }
             else
             {
-                lblCheckAddress.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                lblCheckAddress.Text = "";
                 countValid++;
             }
             if (string.IsNullOrEmpty(dateChanged))
             {
-                lblCheckBirthday.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckBirthday.Text = "please enter date"; 
             }
             else
             {
-                lblCheckBirthday.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                countValid++;
+                var date = DateTime.Parse(dateChanged);
+                if (date >= DateTime.Now)
+                {
+                    lblCheckBirthday.Text = "wrong date";
+                }
+                else
+                {
+                    lblCheckBirthday.Text = "";
+                    countValid++;
+                }
+               
             }
             if (string.IsNullOrEmpty(Introduction))
             {
-                lblCheckIntroduction.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                lblCheckIntroduction.Text = "please enter intro";
             }
             else
             {
-                lblCheckIntroduction.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                lblCheckIntroduction.Text = "";
                 countValid++;
             }
         }
 
-        public static bool IsEmail(string email)
-        {
-            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-            return Regex.IsMatch(email, pattern);
-        }
-
+      
         private async void btnCreateAvatar_Click(object sender, RoutedEventArgs e)
         {
             var picker = new Windows.Storage.Pickers.FileOpenPicker();
@@ -222,15 +236,13 @@ namespace Assignment_UWP.Pages
                 {
                     File = new FileDescription(file.Name, await file.OpenStreamForReadAsync())
                 };
-                lblCheckAvatar.Visibility = Windows.UI.Xaml.Visibility.Visible;
-                lblCheckAvatar.Text = "Xin hãy chờ để cập nhật ảnh";
+
+               
                 RawUploadResult result = await cloudinary.UploadAsync(imageUploadParams);
-                lblCheckAvatar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                lblCheckAvatar.Text = "Hãy chọn ảnh hoặc gán link ảnh";
+                
                 publicIDAvatarCloudinary = result.PublicId;
                 txtAvatar.Text = result.Url.ToString();
-                btnCreateAvatar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                //btnDeleteAvatar.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                
             }
             else
             {
@@ -240,12 +252,14 @@ namespace Assignment_UWP.Pages
 
         private async void RegisterAccount_Click(object sender, RoutedEventArgs e)
         {
-            checkValidate(txtFirstName.Text, txtLastName.Text, txtEmail.Text, txtPassword.Password.ToString(), txtPhone.Text, txtAddress.Text, subCheckGender, txtAvatar.Text, dateChanged, txtIntroduction.Text);
+            checkValidate(txtFirstName.Text, txtLastName.Text, txtEmail.Text, 
+                txtPassword.Password.ToString(), txtPhone.Text, txtAddress.Text,
+                subCheckGender, txtAvatar.Text, dateChanged, txtIntroduction.Text);
             if (countValid < 10)
             {
                 return;
             }
-            waitingRespone.Visibility = Windows.UI.Xaml.Visibility.Visible;
+           
             var account = new Empty.Account()
             {
                 firstName = txtFirstName.Text,
@@ -266,6 +280,8 @@ namespace Assignment_UWP.Pages
             {
                 contentDialog.Title = "Acction success!";
                 contentDialog.Content = "Create Account Success!";
+                Frame rootFrame = Window.Current.Content as Frame;
+                rootFrame.Navigate(typeof(Pages.LoginAccount));
             }
             else
             {

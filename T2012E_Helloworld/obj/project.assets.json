@@ -10107,11 +10107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharp\\FPT\\T2012E_Helloworld\\T2012E_Helloworld\\T2012E_Helloworld.csproj",
+      "projectUniqueName": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\T2012E_Helloworld\\T2012E_Helloworld.csproj",
       "projectName": "T2012E_Helloworld",
-      "projectPath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\T2012E_Helloworld\\T2012E_Helloworld.csproj",
+      "projectPath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\T2012E_Helloworld\\T2012E_Helloworld.csproj",
       "packagesPath": "C:\\Users\\minhb\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharp\\FPT\\T2012E_Helloworld\\T2012E_Helloworld\\obj\\",
+      "outputPath": "D:\\CSharp\\FPT\\Uwp_newbie\\T2012E_Helloworld\\T2012E_Helloworld\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

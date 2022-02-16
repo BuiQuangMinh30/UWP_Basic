@@ -26,8 +26,9 @@ namespace UWP_Sqlite.Pages
     {
         public List<Person> listPerson;
         public static Person personal;
-        private string checkedStartDate;
-        private string checkedEndDate;
+        //private string checkedStartDate;
+        //private string checkedEndDate;
+
         public DataPage()
         {
             this.InitializeComponent();

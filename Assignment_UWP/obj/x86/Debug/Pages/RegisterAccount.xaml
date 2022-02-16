@@ -9,66 +9,82 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ScrollViewer>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" >
-                    <StackPanel Margin="0 50 0 0">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel Margin="0 0 60 0">
-                                <TextBox x:ConnectionId='27' x:Name="txtFirstName" Header="First Name" Margin="0 0 0 10" Width="320" FontSize="20" Text=""/>
-                                <TextBlock x:ConnectionId='28' x:Name="lblCheckFirstName" Margin="0 0 0 0" Visibility="Collapsed" Height="30" Text="Hãy nhập tên đầu" Foreground="Red" FontSize="16"/>
-                            </StackPanel>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://cdn.wallpapersafari.com/96/48/F1KCu6.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
 
-                            <StackPanel>
-                                <TextBox x:ConnectionId='25' x:Name="txtLastName" Header="Last Name" Margin="0 0 0 10" Width="320" FontSize="20" Text=""/>
-                                <TextBlock x:ConnectionId='26' x:Name="lblCheckLastName" Margin="0 0 0 0" Visibility="Collapsed" Height="30" Text="Hãy nhập tên cuối" Foreground="Red" FontSize="16"/>
-                            </StackPanel>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='2' x:Name="txtEmail" Header="Email" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                        <TextBlock x:ConnectionId='3' x:Name="lblCheckEmail" Margin="0 0 0 10" Visibility="Collapsed" Height="30" Text="Hãy nhập email" Foreground="Red" FontSize="16"/>
-                        <PasswordBox x:ConnectionId='4' x:Name="txtPassword" Header="Password" Margin="0 0 0 10" Width="700" FontSize="20" Password=""/>
-                        <TextBlock x:ConnectionId='5' x:Name="lblCheckPassword" Margin="0 0 0 10" Visibility="Collapsed" Height="30" Text="Hãy nhập mật khẩu" Foreground="Red" FontSize="16"/>
-                        <TextBox x:ConnectionId='6' x:Name="txtAddress" Header="Address" Margin="0 0 0 10" Width="700" FontSize="20" Text=""/>
-                        <TextBlock x:ConnectionId='7' x:Name="lblCheckAddress" Margin="0 0 0 10" Visibility="Collapsed" Height="30" Text="Hãy nhập địa chỉ" Foreground="Red" FontSize="16"/>
-                        <TextBox x:ConnectionId='8' x:Name="txtPhone" Header="Phone Number" Margin="0 0 0 10" Width="700" FontSize="20" Text=""/>
-                        <TextBlock x:ConnectionId='9' x:Name="lblCheckPhone" Margin="0 0 0 10" Visibility="Collapsed" Height="30" Text="Hãy nhập số điện thoại" Foreground="Red" FontSize="16"/>
-                        <TextBox x:ConnectionId='10' x:Name="txtAvatar" Header="Avater" Visibility="Collapsed" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                        <Border Height="200" Width="200" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1" Margin="0 0 0 5">
-                            <Image x:ConnectionId='24' x:Name="imgAvatar" />
-                        </Border>
-                        <Button x:ConnectionId='11' x:Name="btnCreateAvatar"  Content="Create Avatar" Margin="0 0 0 10"                               />
-                       
-                        <TextBlock x:ConnectionId='12' x:Name="lblCheckAvatar" Margin="0 0 0 10" Visibility="Collapsed" Height="30" Text="Hãy chọn ảnh hoặc gán link ảnh" Foreground="Red" FontSize="16"/>
-                        <TextBlock  Margin="0 0 0 10" Height="30" Text="Choose Gender"  FontSize="16"/>
-                        <StackPanel Orientation="Horizontal" Width="692">
-                            <RadioButton x:ConnectionId='21' Content="Male" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender"                      />
-                            <RadioButton x:ConnectionId='22' Content="Female" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender"                      />
-                            <RadioButton x:ConnectionId='23' Content="Other" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender"                      />
-                        </StackPanel>
-                        <TextBlock x:ConnectionId='13' x:Name="checkGender" Visibility="Collapsed" HorizontalAlignment="Left" Height="24" Margin="0 0 0 10" Text="Choose Gender" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
-                        <CalendarDatePicker x:ConnectionId='14' x:Name="dtmBirthday" DateFormat="{}{day.integer}-{month.integer}-{year.full}" Margin="0 0 0 10" Width="348" Header="Birthday" VerticalAlignment="Top"                                      />
-                        <TextBlock x:ConnectionId='15' x:Name="lblCheckBirthday" Visibility="Collapsed" HorizontalAlignment="Left" Height="24" Margin="0 0 0 10" Text="Hãy chọn năm sinh" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
-                        <TextBox x:ConnectionId='16' x:Name="txtIntroduction" Header="Information" TextWrapping="Wrap" Margin="0 0 0 10" Width="700" FontSize="20"/>
-                        <TextBlock x:ConnectionId='17' x:Name="lblCheckIntroduction" Margin="0 0 0 10" Visibility="Collapsed" Height="30" Text="Hãy nhập số điện thoại" Foreground="Red" FontSize="16"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
 
-                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0 0 0 10">
-                            <Button x:ConnectionId='19' Content="Create Account" Margin="0 0 10 0"                              />
-                            <Button x:ConnectionId='20' Content="Login"                           />
-                        </StackPanel>
-                        <TextBlock x:ConnectionId='18' x:Name="waitingRespone" Margin="0 10 0 0" Visibility="Collapsed" HorizontalAlignment="Center" Height="30" Text="Xin hãy chờ..." Foreground="Red" FontSize="16"/>
-                    </StackPanel>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="Gray" HorizontalAlignment="Center"
+                    Grid.Row="1" Grid.Column="1" Margin="0,20,0,0" Height="771"
+                    VerticalAlignment="Top" >
+            <StackPanel Margin="20 100 20 0" Height="885">
+                <TextBox x:ConnectionId='15' x:Name="txtFirstName"  Header="First Name" Margin="0 -50 0 5" Width="Auto" FontSize="20"/>
+                <TextBlock x:ConnectionId='16' x:Name="lblCheckFirstName"   Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+                <TextBox x:ConnectionId='17' x:Name="txtEmail" Header="Email"  Width="480" FontSize="20"/>
+                <TextBlock x:ConnectionId='18' x:Name="lblCheckEmail"  Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+                <PasswordBox x:ConnectionId='19' x:Name="txtPassword"  Header="Password"  Width="480" FontSize="20"/>
+                <TextBlock x:ConnectionId='20' x:Name="lblCheckPassword"   Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+                <CalendarDatePicker x:ConnectionId='21' x:Name="dtmBirthday" DateFormat="{}{day.integer}-{month.integer}-{year.full}" Margin="0 0 0 5" Width="348" Header="Birthday" FontSize="19" VerticalAlignment="Top"                                      />
+                <TextBlock x:ConnectionId='22' x:Name="lblCheckBirthday"  HorizontalAlignment="Left" Height="24" Margin="0 0 0 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
+
+
+                <TextBlock x:ConnectionId='23' x:Name="txtGender" Text="Gender"  Width="480" FontSize="20"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton x:ConnectionId='26' Content="Male" VerticalAlignment="Top" GroupName="gender"                      />
+                    <RadioButton x:ConnectionId='27' Content="Felame" VerticalAlignment="Top" GroupName="gender"                      />
+                    <RadioButton x:ConnectionId='28' Content="Other"  VerticalAlignment="Top" GroupName="gender"                      />
                 </StackPanel>
-            </Grid>
-        </ScrollViewer>
+                <TextBlock x:ConnectionId='24' x:Name="checkGender"  HorizontalAlignment="Left" Height="24" Margin="0 0 0 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
+
+
+                <Button x:ConnectionId='25' Width="200" Content="Create Account" Margin="260 130 10 0"                              />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Background="Gray" HorizontalAlignment="Center"
+                     VerticalAlignment="Top" 
+                    Grid.Row="1" 
+                    Grid.Column="2"
+                    Margin="0,20,0,0" Height="771">
+            <StackPanel Margin="20 100 10 0" Height="885">
+                <TextBox x:ConnectionId='2' x:Name="txtLastName" Header="Last Name" Margin="0 -50 0 5" Width="Auto" FontSize="20"/>
+                <TextBlock x:ConnectionId='3' x:Name="lblCheckLastName"  Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+                <TextBox x:ConnectionId='4' x:Name="txtAddress" Header="Address"  Width="480" FontSize="20"/>
+                <TextBlock x:ConnectionId='5' x:Name="lblCheckAddress"   Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+                <TextBox x:ConnectionId='6' x:Name="txtPhone" Header="Phone"  Width="480" FontSize="20"/>
+                <TextBlock x:ConnectionId='7' x:Name="lblCheckPhone"   Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+
+                <TextBox x:ConnectionId='8' x:Name="txtIntroduction" Header="Introduction" TextWrapping="Wrap"  Width="700" FontSize="20"/>
+                <TextBlock x:ConnectionId='9' x:Name="lblCheckIntroduction"  Height="30" Text="" Foreground="Red" FontSize="16"/>
+
+                <TextBox x:ConnectionId='10' x:Name="txtAvatar" Header="Ảnh đại diện" Visibility="Collapsed" Margin="0 0 0 10" Width="700" FontSize="20"/>
+                <Border Height="150" Width="200" HorizontalAlignment="Left" BorderBrush="BlanchedAlmond" BorderThickness="1" >
+                    <Image x:ConnectionId='14' x:Name="imgAvatar" />
+                </Border>
+                <Button x:ConnectionId='11' x:Name="btnCreateAvatar"  Content="Avatar" Visibility="Visible"                                />
+                <TextBlock x:ConnectionId='12' x:Name="lblCheckAvatar" Visibility="Collapsed"  Text="" Height="30" Foreground="Red" FontSize="16"/>
+
+                <Button x:ConnectionId='13' Content="Back Login" Width="200" Margin="10 30 0 0"                           />
+
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Page>
 

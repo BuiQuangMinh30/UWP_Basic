@@ -14,7 +14,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center" Grid.Row="0">
-            <TextBlock Text="Thông tin" FontSize="20"  />
+            <TextBlock Text="Infomation" FontSize="20"  />
         </StackPanel>
         <StackPanel  Grid.Row="1" Margin="0 50 0 0">
             <Grid>
@@ -39,17 +39,19 @@
                     <TextBlock Text="Giới thiệu" Height="100" FontSize="20" Margin="0 0 0 10" />
                 </StackPanel>
                 <StackPanel Grid.Row="0" Grid.Column="1">
-                    <TextBlock x:Name="txtFirstName" Text="Waiting" FontSize="20" Margin="0 0 0 10"/>
-                    <TextBlock x:Name="txtLastName" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
-                    <TextBlock x:Name="txtEmail" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
-                    <TextBlock x:Name="txtAddress" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
-                    <TextBlock x:Name="txtPhone" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
-                   
-                    <TextBlock x:Name="txtGender" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
-                    <TextBlock x:Name="txtBirthday" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
-                    <TextBlock x:Name="txtStatus" Text="Waiting" FontSize="20" Margin="0 0 0 10" />
+                    <TextBlock x:Name="txtFirstName" Text="" FontSize="20" Margin="0 0 0 10"/>
+                    <TextBlock x:Name="txtLastName" Text="" FontSize="20" Margin="0 0 0 10" />
+                    <TextBlock x:Name="txtEmail" Text="" FontSize="20" Margin="0 0 0 10" />
+                    <TextBlock x:Name="txtAddress" Text="" FontSize="20" Margin="0 0 0 10" />
+                    <TextBlock x:Name="txtPhone" Text="" FontSize="20" Margin="0 0 0 10" />
+                    <Border Height="200" Width="200" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="1" Margin="0 0 0 10">
+                        <Image x:Name="txtAvatar" HorizontalAlignment="Left" />
+                    </Border>
+                    <TextBlock x:Name="txtGender" Text="" FontSize="20" Margin="0 0 0 10" />
+                    <TextBlock x:Name="txtBirthday" Text="" FontSize="20" Margin="0 0 0 10" />
+                    <TextBlock x:Name="txtStatus" Text="" FontSize="20" Margin="0 0 0 10" />
                     <ScrollViewer Height="100" Width="900" VerticalScrollBarVisibility="Auto" Margin="0 0 0 10">
-                        <TextBlock x:Name="txtIntroduction" TextWrapping="Wrap" Text="Waiting" FontSize="20" />
+                        <TextBlock x:Name="txtIntroduction" TextWrapping="Wrap" Text="" FontSize="20" />
                     </ScrollViewer>
                 </StackPanel>
             </Grid>

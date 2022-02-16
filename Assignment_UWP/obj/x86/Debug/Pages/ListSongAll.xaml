@@ -16,14 +16,21 @@
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image x:ConnectionId='4'                             MaxHeight="100" MinWidth="150" Stretch="Fill"/>
+                <Image x:ConnectionId='4'                             MaxHeight="100" MaxWidth="160" Stretch="Fill"/>
 
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
                     <TextBlock x:ConnectionId='5'                      FontSize="14" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
                         HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
                     <TextBlock x:ConnectionId='6'                             FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                         TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
-
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Author: " HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="0,0,0,0"/>
+                        <TextBlock x:ConnectionId='7'                        HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                        <TextBlock Text=" ⋅ " FontFamily="Segoe UI" FontSize="12" FontWeight="Bold"
+                            HorizontalAlignment="Left"/>
+                        <TextBlock Text="Singer: " HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                        <TextBlock x:ConnectionId='8'                        HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                    </StackPanel>
                 </StackPanel>
             </Grid>
         </DataTemplate>
@@ -32,14 +39,22 @@
 
         <StackPanel>
             <TextBlock Text="List Song"/>
-            <ListView x:ConnectionId='7' x:Name="MyListSong" ItemTemplate="{StaticResource SongTemplate}"
+            <ListView x:ConnectionId='9' x:Name="MyListSong" ItemTemplate="{StaticResource SongTemplate}"
                       SelectionMode="Single"
                                                                     
-         Height="400"
+         Height="550"
          MinWidth="550"
          BorderThickness="1"
          BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"/>
-            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AutoPlay="False" AreTransportControlsEnabled="True"/>
+            <MediaPlayerElement x:ConnectionId='10' x:Name="MyMediaPlayer" AutoPlay="False" AreTransportControlsEnabled="True">
+                <MediaPlayerElement.TransportControls>
+                    <MediaTransportControls
+                    IsFullWindowButtonVisible="True"
+                    IsNextTrackButtonVisible="True"
+                    IsPreviousTrackButtonVisible="True"
+                    IsZoomButtonVisible="True" />
+                </MediaPlayerElement.TransportControls>
+            </MediaPlayerElement>
         </StackPanel>
     </Grid>
 </Page>

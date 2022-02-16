@@ -11,7 +11,7 @@ namespace UWP_Sqlite
 {
     class DBInitialize
     {
-        public SQLiteConnection conn;
+        public SQLiteConnection conn = null;
         public static int totalMoney;
         public static bool CreateTables()
         {

@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>26c03e71-c5e4-4784-8946-346a3d317996</PackageIdentityName>
     <PackageIdentityPublisher>CN=minhb</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\UWP_Sqlite.exe">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\UWP_Sqlite.exe">
       <PackagePath>entrypoint\UWP_Sqlite.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\grpc.core\2.43.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll">
@@ -61,52 +61,52 @@
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.2\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\UWP_Sqlite.xr.xml">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\UWP_Sqlite.xr.xml">
       <PackagePath>UWP_Sqlite.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Pages\CreatedTransaction.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Pages\CreatedTransaction.xbf">
       <PackagePath>Pages\CreatedTransaction.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Pages\DataPage.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Pages\DataPage.xbf">
       <PackagePath>Pages\DataPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Pages\DataPageDetail.xbf">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Pages\DataPageDetail.xbf">
       <PackagePath>Pages\DataPageDetail.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
@@ -115,10 +115,10 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\CSharp\FPT\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Core\UWP_Sqlite.exe">
+    <AppxPackagedFile Include="D:\CSharp\FPT\Uwp_newbie\T2012E_Helloworld\UWP_Sqlite\bin\x86\Debug\Core\UWP_Sqlite.exe">
       <PackagePath>UWP_Sqlite.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\minhb\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
